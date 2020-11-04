@@ -2,33 +2,43 @@
 
 /* Transition
 -------------------------- */
-$--all-transition: all .3s cubic-bezier(.645,.045,.355,1) !default;
+$--all-transition: all .3s cubic-bezier(.645, .045, .355, 1) !default;
 $--fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
 $--fade-linear-transition: opacity 200ms linear !default;
-$--md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
-$--border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1) !default;
-$--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
+$--md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1),
+opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$--border-transition-base: border-color .2s cubic-bezier(.645, .045, .355, 1) !default;
+$--color-transition-base: color .2s cubic-bezier(.645, .045, .355, 1) !default;
 
 /* Colors
 -------------------------- */
-$--color-white: #fff !default;
-$--color-black: #000 !default;
+$--color-white:#1d7cd4 !default;
+$--color-black: #142C92 !default;
 
-$--color-primary: #262729 !default;
-$--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
-$--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
-$--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
-$--color-primary-light-4: mix($--color-white, $--color-primary, 40%) !default; /* 8cc5ff */
-$--color-primary-light-5: mix($--color-white, $--color-primary, 50%) !default; /* a0cfff */
-$--color-primary-light-6: mix($--color-white, $--color-primary, 60%) !default; /* b3d8ff */
-$--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /* c6e2ff */
-$--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
-$--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
+$--color-primary: #02F2FC !default;
+$--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default;
+/* 53a8ff */
+$--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default;
+/* 66b1ff */
+$--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default;
+/* 79bbff */
+$--color-primary-light-4: mix($--color-white, $--color-primary, 40%) !default;
+/* 8cc5ff */
+$--color-primary-light-5: mix($--color-white, $--color-primary, 50%) !default;
+/* a0cfff */
+$--color-primary-light-6: mix($--color-white, $--color-primary, 60%) !default;
+/* b3d8ff */
+$--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default;
+/* c6e2ff */
+$--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default;
+/* d9ecff */
+$--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default;
+/* ecf5ff */
 
-$--color-success: #409167 !default;
-$--color-warning: #9DA408 !default;
-$--color-danger: #B3450E !default;
-$--color-info: #0A76A4 !default;
+$--color-success: #67c23a !default;
+$--color-warning: #e6a23c !default;
+$--color-danger: #f56c6c !default;
+$--color-info: #909399 !default;
 
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
@@ -40,10 +50,10 @@ $--color-warning-lighter: mix($--color-white, $--color-warning, 90%) !default;
 $--color-danger-lighter: mix($--color-white, $--color-danger, 90%) !default;
 $--color-info-lighter: mix($--color-white, $--color-info, 90%) !default;
 
-$--color-text-primary: #303133 !default;
-$--color-text-regular: #606266 !default;
-$--color-text-secondary: #909399 !default;
-$--color-text-placeholder: #c0c4cc !default;
+$--color-text-primary: #fff !default;
+$--color-text-regular: #fff !default;
+$--color-text-secondary: #a2d2ff !default;
+$--color-text-placeholder: #78B4EF !default;
 
 /* Link
 -------------------------- */
@@ -52,17 +62,17 @@ $--link-hover-color: $--color-primary !default;
 
 /* Background
 -------------------------- */
-$--background-color-base: #f5f7fa !default;
+$--background-color-base: #1860BB !default;
 
 /* Border
 -------------------------- */
 $--border-width-base: 1px !default;
 $--border-style-base: solid !default;
-$--border-color-base: #dcdfe6 !default;
-$--border-color-light: #e4e7ed !default;
+$--border-color-base: #1ba3ec !default;
+$--border-color-light: #02F2FC !default;
 $--border-color-lighter: #ebeef5 !default;
 $--border-color-extra-light: #f2f6fc !default;
-$--border-color-hover: $--color-text-placeholder !default;
+$--border-color-hover: #02F2FC !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
 $--border-radius-base: 4px !default;
 $--border-radius-small: 2px !default;
@@ -70,8 +80,10 @@ $--border-radius-circle: 100% !default;
 
 /* Box-shadow
 -------------------------- */
-$--box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) !default;
-$--box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12) !default;
+$--box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12),
+0 0 6px rgba(0, 0, 0, .04) !default;
+$--box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12),
+0 0 6px rgba(0, 0, 0, .12) !default;
 $--box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
 
 /* Fill
@@ -100,13 +112,13 @@ $--index-popper: 2000 !default;
 
 /* Disable base
 -------------------------- */
-$--disabled-fill-base: $--background-color-base !default;
+$--disabled-fill-base: #1860BB !default;
 $--disabled-color-base: $--color-text-placeholder !default;
-$--disabled-border-base: $--border-color-light !default;
+$--disabled-border-base: #8CC8FA !default;
 
 /* Icon
 -------------------------- */
-$--icon-color: #666 !default;
+$--icon-color: #02F2FC !default;
 $--icon-color-base: $--color-info !default;
 
 /* Checkbox
@@ -321,8 +333,8 @@ $--input-border: $--border-base !default;
 $--input-border-color: $--border-color-base !default;
 $--input-border-radius: $--border-radius-base !default;
 $--input-border-color-hover: $--border-color-hover !default;
-$--input-fill: $--color-white !default;
-$--input-fill-disabled: $--disabled-fill-base !default;
+$--input-fill: #164FB9 !default;
+$--input-fill-disabled: $--border-color-hover !default;
 $--input-color-disabled: $--font-color-disabled-base !default;
 $--input-icon-color: $--color-text-placeholder !default;
 $--input-placeholder-color: $--color-text-placeholder !default;
@@ -365,9 +377,11 @@ $--cascader-menu-option-color-disabled: #999 !default;
 $--cascader-menu-option-fill-disabled: rgba($--color-black, 0.06) !default;
 $--cascader-menu-option-empty-color: #666 !default;
 $--cascader-menu-group-color: #999 !default;
-$--cascader-menu-shadow: 0 1px 2px rgba($--color-black, 0.14), 0 0 3px rgba($--color-black, 0.14) !default;
+$--cascader-menu-shadow: 0 1px 2px rgba($--color-black, 0.14),
+0 0 3px rgba($--color-black, 0.14) !default;
 $--cascader-menu-option-pinyin-color: #999 !default;
-$--cascader-menu-submenu-shadow: 1px 1px 2px rgba($--color-black, 0.14), 1px 0 2px rgba($--color-black, 0.14) !default;
+$--cascader-menu-submenu-shadow: 1px 1px 2px rgba($--color-black, 0.14),
+1px 0 2px rgba($--color-black, 0.14) !default;
 
 /* Group
 -------------------------- */
@@ -618,11 +632,11 @@ $--datepicker-header-color: $--color-text-regular !default;
 $--datepicker-icon-color: $--color-text-primary !default;
 $--datepicker-border-color: $--disabled-border-base !default;
 $--datepicker-inner-border-color: #e4e4e4 !default;
-$--datepicker-inrange-color: $--border-color-extra-light !default;
-$--datepicker-inrange-hover-color: $--border-color-extra-light !default;
+$--datepicker-inrange-color: #126FC6 !default;
+$--datepicker-inrange-hover-color: #164FB9 !default;
 $--datepicker-active-color: $--color-primary !default;
 $--datepicker-text-hover-color: $--color-primary !default;
-$--datepicker-cell-hover-color: #fff !default;
+$--datepicker-cell-hover-color: red !default;
 
 /* Loading
 --------------------------*/
@@ -631,7 +645,7 @@ $--loading-fullscreen-spinner-size: 50px !default;
 
 /* Scrollbar
 --------------------------*/
-$--scrollbar-background-color: rgba($--color-text-secondary, .3) !default;
+$--scrollbar-background-color: rgba($--color-text-secondary, .5) !default;
 $--scrollbar-hover-background-color: rgba($--color-text-secondary, .5) !default;
 
 /* Carousel
@@ -690,16 +704,13 @@ $--md: 992px !default;
 $--lg: 1200px !default;
 $--xl: 1920px !default;
 
-$--breakpoints: (
-  'xs' : (max-width: $--sm - 1),
+$--breakpoints: ('xs' : (max-width: $--sm - 1),
   'sm' : (min-width: $--sm),
   'md' : (min-width: $--md),
   'lg' : (min-width: $--lg),
-  'xl' : (min-width: $--xl)
-);
+  'xl' : (min-width: $--xl));
 
-$--breakpoints-spec: (
-  'xs-only' : (max-width: $--sm - 1),
+$--breakpoints-spec: ('xs-only' : (max-width: $--sm - 1),
   'sm-and-up' : (min-width: $--sm),
   'sm-only': "(min-width: #{$--sm}) and (max-width: #{$--md} - 1)",
   'sm-and-down': (max-width: $--md - 1),
