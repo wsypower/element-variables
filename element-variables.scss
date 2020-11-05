@@ -15,7 +15,7 @@ $--color-transition-base: color .2s cubic-bezier(.645, .045, .355, 1) !default;
 $--color-white:#1d7cd4 !default;
 $--color-black: #142C92 !default;
 
-$--color-primary: #02F2FC !default;
+$--color-primary: #02F0FB !default;
 $--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default;
 /* 53a8ff */
 $--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default;
@@ -35,10 +35,10 @@ $--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default;
 $--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default;
 /* ecf5ff */
 
-$--color-success: #67c23a !default;
-$--color-warning: #e6a23c !default;
+$--color-success: #fff !default;
+$--color-warning: #fff !default;
 $--color-danger: #f56c6c !default;
-$--color-info: #909399 !default;
+$--color-info: #909399!default;
 
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
@@ -62,7 +62,7 @@ $--link-hover-color: $--color-primary !default;
 
 /* Background
 -------------------------- */
-$--background-color-base: #1860BB !default;
+$--background-color-base: #1ba3ec !default;
 
 /* Border
 -------------------------- */
@@ -114,7 +114,7 @@ $--index-popper: 2000 !default;
 -------------------------- */
 $--disabled-fill-base: #1860BB !default;
 $--disabled-color-base: $--color-text-placeholder !default;
-$--disabled-border-base: #8CC8FA !default;
+$--disabled-border-base: #02F2FC !default;
 
 /* Icon
 -------------------------- */
@@ -125,7 +125,7 @@ $--icon-color-base: $--color-info !default;
 -------------------------- */
 $--checkbox-font-size: 14px !default;
 $--checkbox-font-weight: $--font-weight-primary !default;
-$--checkbox-color: $--color-text-regular !default;
+$--checkbox-color: $--color-text-placeholder !default;
 $--checkbox-input-height: 14px !default;
 $--checkbox-input-width: 14px !default;
 $--checkbox-input-border-radius: $--border-radius-small !default;
@@ -135,14 +135,14 @@ $--checkbox-input-border-color: $--border-color-base !default;
 $--checkbox-icon-color: $--color-white !default;
 
 $--checkbox-disabled-input-border-color: $--border-color-base !default;
-$--checkbox-disabled-input-fill: #edf2fc !default;
+$--checkbox-disabled-input-fill: #6e6e6e !default;
 $--checkbox-disabled-icon-color: $--color-text-placeholder !default;
 
 $--checkbox-disabled-checked-input-fill: $--border-color-extra-light !default;
 $--checkbox-disabled-checked-input-border-color: $--border-color-base !default;
 $--checkbox-disabled-checked-icon-color: $--color-text-placeholder !default;
 
-$--checkbox-checked-text-color: $--color-primary !default;
+$--checkbox-checked-text-color: $--border-color-extra-light !default;
 $--checkbox-checked-input-border-color: $--color-primary !default;
 $--checkbox-checked-input-fill: $--color-primary !default;
 $--checkbox-checked-icon-color: $--fill-base !default;
@@ -246,7 +246,7 @@ $--select-group-font-size: 12px !default;
 
 $--select-dropdown-background: $--color-white !default;
 $--select-dropdown-shadow: $--box-shadow-light !default;
-$--select-dropdown-empty-color: #999 !default;
+$--select-dropdown-empty-color: $--color-text-placeholder !default;
 $--select-dropdown-max-height: 274px !default;
 $--select-dropdown-padding: 6px 0 !default;
 $--select-dropdown-empty-padding: 10px 0 !default;
@@ -430,15 +430,15 @@ $--button-mini-padding-horizontal: 15px !default;
 
 $--button-default-color: $--color-text-regular !default;
 $--button-default-fill: $--color-white !default;
-$--button-default-border: $--border-color-base !default;
+$--button-default-border: #02F2FC !default;
 
 $--button-disabled-color: $--color-text-placeholder !default;
 $--button-disabled-fill: $--color-white !default;
 $--button-disabled-border: $--border-color-lighter !default;
 
 $--button-primary-border: $--color-primary !default;
-$--button-primary-color: $--color-white !default;
-$--button-primary-fill: $--color-primary !default;
+$--button-primary-color: $--color-text-regular !default;
+$--button-primary-fill: $--color-white !default;
 
 $--button-success-border: $--color-success !default;
 $--button-success-color: $--color-white !default;
@@ -614,7 +614,7 @@ $--steps-padding: 20px !default;
 $--menu-item-font-size: $--font-size-base !default;
 $--menu-item-color: $--color-text-primary !default;
 $--menu-item-fill: $--color-white !default;
-$--menu-item-hover-fill: $--color-primary-light-9 !default;
+$--menu-item-hover-fill: $--color-primary-light-8 !default;
 
 /* Rate
 --------------------------*/
@@ -627,15 +627,15 @@ $--rate-icon-color: $--color-text-placeholder !default;
 /* DatePicker
 --------------------------*/
 $--datepicker-color: $--color-text-regular !default;
-$--datepicker-off-color: $--color-text-placeholder !default;
+$--datepicker-off-color: #02F2FC !default;
 $--datepicker-header-color: $--color-text-regular !default;
 $--datepicker-icon-color: $--color-text-primary !default;
 $--datepicker-border-color: $--disabled-border-base !default;
 $--datepicker-inner-border-color: #e4e4e4 !default;
 $--datepicker-inrange-color: #126FC6 !default;
 $--datepicker-inrange-hover-color: #164FB9 !default;
-$--datepicker-active-color: $--color-primary !default;
-$--datepicker-text-hover-color: $--color-primary !default;
+$--datepicker-active-color: $--disabled-border-base !default;
+$--datepicker-text-hover-color: $--disabled-border-base !default;
 $--datepicker-cell-hover-color: red !default;
 
 /* Loading
